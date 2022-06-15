@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+
+$PaleViolet: hsl(276, 100%, 81%);
+$ModerateViolet: hsl(276, 55%, 52%);
+$DesaturatedDarkViolet: hsl(271, 15%, 43%);
+$GrayishBlue: hsl(206, 6%, 79%);
+$VeryDarkDesaturatedViolet : hsl(271, 36%, 24%);
+$DarkGrayishViolet: hsl(270, 7%, 64%);
+
+$LightMagenta: hsl(293, 100%, 63%);
+$LightViolet: hsl(264, 100%, 61%);
+
+$White: hsl(0, 0%, 100%);
+ $LightGrayishViolet: hsl(270, 20%, 96%);
+ $VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+ $VeryLightMagenta : hsl(289, 100%, 72%);
+
+
+ body {
+    background-color: $LightGrayishViolet;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+} 
+
+
+
+.dg {
+    background-color: rgba(240, 234, 234, 0.582);
+     position: absolute;
+     z-index: -99;
+      
+     
+ }
+
+.bg{
+    background-image: linear-gradient( $LightMagenta, $LightViolet);
+    position: relative;
+    z-index: -99;
+   }
+
+.container {
+    background-color: $White;
+    border-radius: 30px 30px;
+    box-shadow: 0 15px 10px rgba(122, 114, 114, 0.1);
+    position: absolute;
+    
+}
+
+.wrapper {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+header {
+    background-image:linear-gradient(to right, $LightViolet,$LightMagenta);
+    box-shadow: 0 15px 10px rgba(122, 114, 114, 0.1);
+    margin-top: 10px;
+
+    h2{
+        color: $White;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    span {
+        color: $White;
+        font-size: .8rem;
+        font-weight: 500;
+        opacity: .4;
+        
+    }
+    
+    &::before{
+        background-color: $White;
+      
+    }
+
+    
+
+    
+    img {
+        border: 2px solid $White;
+        border-radius: 50%;
+        max-height: 40px;
+        max-width: 40px;
+        margin-left: 6px;
+    }
+    
+    
+
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px 0 20px 10px;
+        
+
+        .arrow{
+            margin-left: 12px;
+            margin-top: 0px;
+            position: relative;
+
+
+            &::before{
+                background-color: $White;
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: -8px;
+                width: 3px;
+                height: 9px;
+                transform: skew(-28deg,0deg);
+            }
+
+                  
+            &::after{
+                background-color: $White;
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 3px;
+                height: 9px;
+                transform: skew(28deg,0deg);
+
+            }
+        }
+
+
+        .dots{
+            background-color: $White;
+            border-radius: 50%;
+            height: 3px;
+            position: absolute;
+            width: 4px;
+
+            
+            &::before{
+                content: '';
+                background-color: $White;
+                border-radius: 50%;
+                height: 3px;
+                position: absolute;
+                width: 4px;
+                top: -6px;
+                left: 0px; 
+            }
+
+              
+            &::after{
+                content: '';
+                background-color: $White;
+                border-radius: 50%;
+                height: 3px;
+                position: absolute;
+                width: 4px;
+                top: 6px;
+                left: 0px; 
+            }
+    
+        }
+
+        
+        
+     
+
+    }
+
+   
+
+   
+
+
+}
+
+.user1 {
+    background-color: $GrayishBlue;
+    color: $ModerateViolet;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.pic {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 15px;
+     padding-right: 8px;
+
+    img {
+        border-radius: 15px;
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.intro-container{
+    margin-top: 7px;
+
+    .user1{
+        border-radius: 15px 15px 15px 0;
+        padding: 8px 8px 8px 8px;
+    }
+}
+
+.intro-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 8px 5px;
+    
+}
+
+.user2 {
+    background-color: $White;
+    border-radius: 15px 15px 0 15px;
+    box-shadow: 0 15px 10px rgba(122, 114, 114, 0.1);
+    color: $VeryDarkDesaturatedViolet;
+    font-size: .8rem;
+    font-weight: 500;
+    max-width: 80%;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+.user-2 {
+    padding: 7px 15px 7px 20px;
+}
+
+.user-3 {
+    padding: 10px;
+}
+
+.user-2, .user-3{
+    margin-left: auto;
+}
+
+.user3{
+    background-color: $GrayishBlue;
+    border-radius: 15px 15px 15px 0;
+    color: $ModerateViolet;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 7px; 
+    padding: 6px 3px 6px 5px;
+}
+
+
+
+
+.box {
+background-image:  linear-gradient(to left, $LightViolet, $LightMagenta);
+border-radius: 15px 15px 15px 0;
+cursor: pointer;
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 10px;
+margin-left: 8px;
+max-width: 75%;
+padding: 15px;
+
+.circle {
+    outline: 1px solid #fff;
+    border-radius: 50%;
+    height: 15px;
+    opacity: .5;
+    width: 15px;
+}
+
+p {
+    color: $White;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-left: 30px;
+    opacity: .8;
+
+}
+
+span{
+    color: $White;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    margin-right: 12px;
+    
+
+    input{
+        border: none;
+        border-radius: 50px;
+        height: 60px;
+        width: 100%;
+        margin-bottom: 6px;
+        
+
+        &::placeholder{
+            color: $GrayishBlue;
+            font-size: .9rem;
+            font-weight: 500;
+            margin-left: -20px;
+            padding: 10px 20px 10px 20px;
+        }
+
+       
+    }
+
+    .round {
+        background-color: $VeryDarkDesaturatedViolet;
+        border-radius: 50%;
+        color: $White;
+        cursor: pointer;
+        font-size: 1.8rem;
+        max-height: 36px;
+        margin: 10px 0 0 -50px;
+        padding: 0 11px;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+        color: $DesaturatedDarkViolet;
+    }
+
+    p {
+        color: $DarkGrayishViolet;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .dg {
+        border-top-left-radius: 1400px;
+        height: 500px;
+        width: 30%;
+        left: 70%;
+        right: 70%;
+        top: 100%;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .bg{
+    background-image: linear-gradient( $LightMagenta, $LightViolet);
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    height: 700px;
+    width: 40%;
+    
+   }
+
+    header {
+        border-radius: 20px 20px 5px 5px;
+        max-height: 100px;
+        padding: 20px 0 20px 0;
+    
+        &::before{
+            background-color: $White;
+            border-radius: 0 0 15px 15px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            height: 30px;
+            width: 200px;
+        }
+
+
+        .dots{
+            margin-left: 250px;
+        }
+
+        
+
+    }
+
+    .user1 {
+        max-width: 70%;
+        p{
+            font-size: .8rem;
+        }
+       
+    }
+
+
+    .user3{
+        max-width: 65%;
+        padding: 5px;
+
+        p{
+            font-size: .8rem;
+        }
+        
+    }
+
+    .container{
+        height: 700px;
+        width: 310px;
+        left: 10%;
+        top: 30%;
+    }
+
+
+
+    .main-content{
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-top: 150px;
+        padding: 30px 0;
+        text-align: center;
+       
+        
+        h1{
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 40px 0  20px 0;
+            
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 25px;
+            
+        }
+    }
+}
+   
+
+
+@media screen and (min-width: 768px){
+
+    .dg {
+        
+        border-radius: 300px 300px 0 0;
+        height: 700px;
+        width: 25%;
+        top: 200px;
+        left: 75%;
+        
+    }
+
+
+    main {
+        display: flex;
+        align-items: center;
+        gap: 350px;
+    }
+
+    header {
+        border-radius: 20px 20px 0 0;
+        padding-top: 20px;
+        
+        &::before{
+            background-color: $White;
+            border-radius: 0 0 15px 15px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            height: 30px;
+            width: 280px;
+        }
+
+        .dots{
+            margin-left: 320px;
+        }
+    }
+    
+   .bg{
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    height: 750px;
+    width: 50%;
+    
+   }
+
+    .container{
+        height: 700px;
+        width: 380px;
+        left: 12%;
+        top: 25%;
+    }
+
+
+    .user1 {
+        max-width: 55%;
+    }
+
+    .user-2 {
+        max-width: 76%;
+    }
+
+    .user3 {
+        max-width: 55%;
+        padding: 7px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        max-width: 800px;
+        
+        
+       
+       
+        
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 25px;
+            
+            
+           
+        }
+    }
+}
