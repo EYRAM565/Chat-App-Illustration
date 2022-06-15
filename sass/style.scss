@@ -312,7 +312,7 @@ span{
 form {
     display: flex;
     justify-content: center;
-    margin-top: 23px;
+   
     margin-right: 12px;
     
 
@@ -438,6 +438,10 @@ form {
         top: 30%;
     }
 
+    form{
+        margin-top: 25px;
+    }
+
 
 
     .main-content{
@@ -532,6 +536,10 @@ form {
     .user3 {
         max-width: 55%;
         padding: 7px;
+    }
+
+    form{
+        margin-top: 23px;
     }
 
     .main-content {
